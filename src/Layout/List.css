@@ -1,0 +1,23 @@
+.list-container {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  gap: 16px;
+}
+.list-img {
+  transform: scale(0.75);
+  object-fit: contain;
+}
+.list-text {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .list-text {
+    display: block;
+  }
+}

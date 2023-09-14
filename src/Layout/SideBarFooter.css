@@ -1,0 +1,29 @@
+.sidebarfooter-container {
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .sidebarfooter-container {
+    display: block;
+  }
+}
+.sidebarfooter-icon {
+  display: block;
+  color: white;
+  height: 28px;
+  width: 28px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 1024px) {
+  .sidebarfooter-icon {
+    display: none;
+  }
+}
