@@ -2,7 +2,20 @@ import React from 'react'
 import { DoughnutGraph } from '../Graph'
 import './ProductGraph.css'
 
+const ProductItem = ({ color, name }) => (
+  <div className='flex gap-4 items-center'>
+    <div className={`bg-${color} rounded-full p-2`}></div>
+    <h2 className='font-mon font-semibold text-lg'>{name}</h2>
+  </div>
+)
+
 function ProductGraph() {
+  const products = [
+    { color: 'green', name: 'Basic Tees' },
+    { color: 'yellow', name: 'Custom Short Pants' },
+    { color: 'red', name: 'Super Hoodies' },
+  ]
+
   return (
     <div className='bg-light border-2 border-grey shadow-xl my-7 rounded-2xl'>
       <div className='flex justify-between items-center pt-10 px-10'>
@@ -14,20 +27,9 @@ function ProductGraph() {
           <DoughnutGraph />
         </div>
         <div className='grid place-content-between'>
-          <div className='flex gap-4 items-center'>
-            <div className='bg-gree rounded-full p-2'></div>
-            <h2 className='font-mon font-semibold text-lg'>Basic Tees</h2>
-          </div>
-          <div className='flex gap-4 items-center'>
-            <div className='bg-yellow rounded-full p-2'></div>
-            <h2 className='font-mon font-semibold text-lg'>
-              Custom Short Pants
-            </h2>
-          </div>
-          <div className='flex gap-4 items-center'>
-            <div className='bg-red rounded-full p-2'></div>
-            <h2 className='font-mon font-semibold text-lg'>Super Hoodies</h2>
-          </div>
+          {products.map((product) => (
+            <ProductItem color={product.color} name={product.name} />
+          ))}
         </div>
       </div>
     </div>

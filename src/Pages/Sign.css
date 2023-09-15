@@ -1,0 +1,87 @@
+.sign-section {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+.sign-container {
+  padding: 10px;
+  border-radius: 25px;
+}
+.sign-header {
+  font-size: 3em;
+  font-weight: bold;
+  padding-top: 6px;
+  font-family: 'monospace';
+}
+.sign-subheader {
+  font-family: 'monospace';
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-bottom: 6px;
+}
+.sign-google-button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.sign-form {
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.sign-input-class {
+  display: grid;
+  margin-bottom: 20px;
+}
+.sign-email-label {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.sign-em-pass {
+  width: 320px;
+  border-radius: 8px;
+  border: 2px solid #dbdbdb; /* This is a grey color, you can adjust as needed */
+  background-color: #dae0e9; /* This is a grey color, you can adjust as needed */
+  padding: 10px;
+  margin: 5px;
+}
+.sign-for-pass {
+  font-size: 1em;
+  color: #007bff;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+.sign-button {
+  display: grid;
+  padding: 12px 0;
+}
+.sign-press {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 12px 0;
+  border-radius: 8px;
+}
+
+.sign-press:hover {
+  background-color: #0069d9;
+}
+.sign-end-div {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.sign-mess {
+  cursor: pointer;
+  color: #007bff;
+}

@@ -1,0 +1,97 @@
+.login-container {
+  position: relative;
+  background-color: #f8f9fa; /* This is a light color, you can adjust as needed */
+}
+@media (min-width: 1024px) {
+  .login-div {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+}
+.login-grid {
+  display: grid;
+  z-index: 50;
+}
+
+@media (min-width: 1024px) {
+  .login-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.login-hfull {
+  display: grid;
+  height: 100%;
+}
+
+.login-top {
+  background-color: #007bff; /* This is a primary color, you can adjust as needed */
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .login-top {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.00001
+    ); /* This is nearly transparent white, you can adjust as needed */
+    width: auto;
+  }
+}
+
+.login-title {
+  margin: 20px;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+.login-board {
+  font-size: 5em;
+  font-family: 'monospace';
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+}
+
+@media (min-width: 1024px) {
+  .login-board {
+    padding: 100px;
+  }
+}
+
+.login-icons {
+  display: flex;
+  gap: 6px;
+}
+
+@media (min-width: 1024px) {
+  .login-icons {
+    padding-top: 250px;
+    padding-left: 100px;
+    display: flex;
+  }
+}
+.login-img {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.login-left {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .login-left {
+    display: block;
+  }
+}
+.login-end {
+  height: 100vh; /* This is equivalent to 100% of the viewport height */
+  width: 50%; /* This is equivalent to 50% of the viewport width */
+  z-index: 0;
+}
