@@ -8,14 +8,23 @@
   transform: scale(0.75);
   object-fit: contain;
 }
+.list-img-bold {
+  transform: scale(1);
+  object-fit: contain;
+}
 .list-text {
   font-family: monospace;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   display: none;
 }
-
+.list-text-bold {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
 @media (min-width: 1024px) {
   .list-text {
     display: block;

@@ -1,4 +1,4 @@
-# This project create with React and Firebase
+# Dashboard App
 
 The Dashboard app is a web application developed using the React JavaScript library and Firebase, a comprehensive cloud-based platform for building web and mobile applications.
 

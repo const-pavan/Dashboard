@@ -16,6 +16,23 @@ const InputField = ({ type, placeholder, value, name, handleChange }) => (
 )
 
 function FormComponent({ formData, handleChange, handleBasic }) {
+  const isEmailValid = (email) => {
+    // Regular expression for basic email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailPattern.test(email)
+  }
+
+  const handleNextClick = (e) => {
+    e.preventDefault()
+    if (!isEmailValid(formData.email)) {
+      // Display a pop-up when email is invalid
+      alert('Invalid email address')
+    } else {
+      // Proceed to the next step
+      handleBasic()
+    }
+  }
+
   const fields = [
     {
       type: 'text',
@@ -25,7 +42,7 @@ function FormComponent({ formData, handleChange, handleBasic }) {
     },
     {
       type: 'email',
-      placeholder: 'Eg. John@xyz.com',
+      placeholder: 'Eg. john@xyz.com',
       value: formData.email,
       name: 'email',
     },
@@ -40,10 +57,13 @@ function FormComponent({ formData, handleChange, handleBasic }) {
   return (
     <div>
       {fields.map((field) => (
-        <InputField {...field} handleChange={handleChange} />
+        <InputField {...field} handleChange={handleChange} key={field.name} />
       ))}
-      <div className='w-full flex justify-end' onClick={handleBasic}>
-        <button className='bg-primary text-white px-5 py-2 rounded-lg hover:bg-white hover:text-primary border-2 border-primary'>
+      <div className='w-full flex justify-end'>
+        <button
+          className='bg-primary text-white px-5 py-2 rounded-lg hover:bg-white hover:text-primary border-2 border-primary'
+          onClick={handleNextClick}
+        >
           Next
         </button>
       </div>

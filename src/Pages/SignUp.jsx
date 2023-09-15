@@ -15,7 +15,7 @@ export default function SignUp({ handleLog }) {
     createUserWithEmailAndPassword(database, email, password)
       .then((data) => {
         console.log(data, 'authData')
-        history('/')
+        history('/dashboard')
       })
       .catch((error) => {
         alert(error)

@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <section className='sidebar-container'>
       <div>
-        <h1 className='sidebar-header'>Board</h1>
+        <h1 className='sidebar-header'>Board.</h1>
       </div>
       <div className='sidebar-body'>
         <List links={links} />
